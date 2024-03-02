@@ -1,0 +1,11 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="#000"
+>
+    <path
+    d="M5 20V4L19 12L5 20Z"
+    stroke="#000"
+    stroke-width="1.5"
+    stroke-linejoin="round"
+    ></path>
+</svg>

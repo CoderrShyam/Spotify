@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/utility.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container flex bg-black">
+      <div id="left">
+        <div id="close">
+          <img src="./assets/img/cross.svg" alt="close img" />
+        </div>
+        <div class="home bg-gray m-1 p-1 rounded flex column">
+          <div class="logo pointer">
+            <img
+              src="./assets/img/logo.svg"
+              alt="Spotify logo"
+              class="invert-1"
+              width="110"
+            />
+          </div>
+
+          <ul class="flex column">
+            <li class="flex items-center pointer">
+              <img
+                src="./assets/img/home.svg"
+                alt="Home icon"
+                class="invert-1"
+              />
+              <span class="weight-700">Home</span>
+            </li>
+
+            <li class="flex items-center pointer search">
+              <img
+                src="./assets/img/search.svg"
+                alt="Serach icon"
+                class="invert-half"
+              />
+              <span class="text-gray weight-700">Search</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="library bg-gray m-1 rounded flex column relative">
+          <div class="heading relative p-1 index-11 flex">
+            <h4 class="flex pointer">
+              <img
+                src="./assets/img/library.svg"
+                alt="library icon"
+                class="invert-semi-half"
+              />
+              <span class="light-gray weight-700">Your Library</span>
+            </h4>
+          </div>
+
+          <div class="song-list">
+            <ul class="bg-black flex"></ul>
+          </div>
+
+          <div class="footer p-1 relative index-11">
+            <div class="footer-child-1 flex">
+              <div>
+                <a href="#"><span>Legal</span></a>
+              </div>
+              <div>
+                <a href="#"><span>Saftey & Privacy Center</span></a>
+              </div>
+              <div>
+                <a href="#"><span>Privacy Policy</span></a>
+              </div>
+              <div>
+                <a href="#"><span>Cookies</span></a>
+              </div>
+              <div>
+                <a href="#"><span>About Ads</span></a>
+              </div>
+              <div>
+                <a href="#"><span>Accessibility</span></a>
+              </div>
+            </div>
+
+            <div class="footer-child-2">
+              <a href="#"><span>Cookies</span></a>
+            </div>
+
+            <div class="footer-child-3">
+              <button
+                class="footer-btn pointer flex justify-center items-center"
+              >
+                <span>
+                  <img
+                    src="./assets/img/universe.svg"
+                    alt="universe icon"
+                    class="invert-1"
+                  />
+                </span>
+                <span>English</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="right" class="bg-gray rounded relative">
+        <div class="header flex items-center">
+          <div class="arrows flex">
+            <img
+              src="./assets/img/hamburger.svg"
+              alt="hamburger"
+              id="hamburger"
+              class="hamburger pointer"
+            />
+            <button class="pointer">
+              <img
+                src="./assets/img/left-arrow.svg"
+                alt="left arrow icon"
+                class="invert-semi-half"
+              />
+            </button>
+
+            <button class="pointer">
+              <img
+                src="./assets/img/right-arrow.svg"
+                alt="right arrow icon"
+                class="invert-semi-half"
+              />
+            </button>
+          </div>
+
+          <div class="buttons relative flex">
+            <button class="signup light-gray">Sign up</button>
+            <button class="login">Log in</button>
+          </div>
+        </div>
+
+        <div class="spotify-playlists">
+          <div class="spotify-playlists-child">
+            <h1>Spotify Playlists</h1>
+
+            <div class="card-container">
+              <div class="card pointer">
+                <div class="play flex justify-center items-center">
+                  <img src="./assets/img/play.svg" alt="play icon" />
+                </div>
+                <img
+                  src="https://i.scdn.co/image/ab67706f000000022e63cecea090de728740ae76"
+                  alt="card img"
+                  class="cardImg"
+                />
+                <h2>Today’s Top Hits</h2>
+                <p class="light-gray">
+                  Tate McRae is on top of the Hottest 50!
+                </p>
+              </div>
+
+              <div class="card pointer">
+                <div class="play flex justify-center items-center">
+                  <img src="./assets/img/play.svg" alt="play icon" />
+                </div>
+                <img
+                  src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037"
+                  alt="card img"
+                  class="cardImg"
+                />
+                <h2>Lofi beats!</h2>
+                <p class="light-gray">
+                  chill beats, lofi vibes, new tracks every... weak...
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="playbar flex items-center invert-1">
+            <div class="seekbar pointer">
+              <div class="circle"></div>
+            </div>
+
+            <div class="abovebar flex">
+              <div class="song-info">Ram Siya Ram</div>
+
+              <div class="songs-button flex justify-center items-center">
+                <img
+                  src="./assets/img/prevsong.svg"
+                  alt="previous songbtn"
+                  class="pointer"
+                  id="previous"
+                />
+                <img
+                  src="./assets/img/playrounded.svg"
+                  alt="play songbtn"
+                  class="pointer"
+                  id="play"
+                />
+                <img
+                  src="./assets/img/nextsong.svg"
+                  alt="previous songbtn"
+                  class="pointer"
+                  id="next"
+                />
+              </div>
+              <div class="song-time">00:00 / 03:50</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <script src="./js/script.js"></script> -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
