@@ -357,19 +357,9 @@ body {
   #right .spotify-playlists .playbar .abovebar {
     padding: 0;
     margin-bottom: 10px;
-  }
-
-  #right .spotify-playlists .playbar .songs-button {
-    gap: 10px;
-  }
-
-  #right .spotify-playlists .playbar .song-info,
-  .playbar .song-time {
-    font-size: 14px;
-  }
-
-  #right .spotify-playlists .playbar .songs-button img {
-    width: 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
   }
 
   #right .spotify-playlists h1 {
